@@ -1,110 +1,99 @@
-* {
-    background:#F3F5FC;    
-    Font-family: Inter;
-    Font-weight: 400;
+*{
+    background: #f3f5fc;
+    font-family: Inter ;
+    font-style: normal;
+    font-weight: 400;
     font-size: 32px;
-    line-height: 150%; 
-    
+    line-height: 150%;
+
 }
 
-.logo{
-    padding-top:10px;
+.logo {
+    padding-top: 10px;
     margin-left: 10px;
     width: 10%;
-
 }
 
 main{
     display: flex;
     margin-bottom: 50px;
-    margin-left: 80px;
+    margin-left: 80px;  
+
 }
 
 .text-area {
-    border:none;
-    color: blue;
+    border: none;
+    color: #0a3871;
     margin-top: 90px;
     text-transform: lowercase;
 }
 
-::placeholder{color:blue}
-.text-area:focus {
-    outline:none;
-}
+::placeholder { color: #0a3871;}
+    .text-area:focus {
+        outline: none;
+    }
 
-.mensaje{
+.mensaje {
     background: white;
-    background-image: url("d:/personal/oracle/challenger/imagenes/Muñeco.png");
+    background-image: url(Muñeco.png);
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
-    color: blue;
+    color: #0a3871;
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
-    text-align:inherit;
-    font-size: 15px;
 }
 
 .mensaje:focus {
     outline: none;
 }
 
-.botones{
+.botones {
     display: flex;
     margin-top: 18px;
+    
 }
 
-.btnEncriptar {
-    background-color: blue;
-    border: 1px blue;
+.btn-encriptar {
+    background-color: #0a3871;
+    border: 1 px solid #0a3871;
     border-radius: 24px;
-    color: antiquewhite;
-    cursor: pointer;
+    color: white;
+    cursor:pointer;
     height: 67px;
-    width: 328px;
+    width:328px;
+
 }
 
-.btnDesencriptar {
-    background-color:whitesmoke;
-    border: 1px solid blue;
+.btn-desencriptar {
+    background-color: #d3dfe8;
+    border: 1 px solid #0a3871;
     border-radius: 24px;
-    color: blue;
-    cursor: pointer;
+    color: #0a3871;
+    cursor:pointer;
     height: 67px;
+    width:328px;
     margin-left: 30px;
-    width: 328px;
+    
+}
+
+.copiar {
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+    
 }
 
 .informacion {
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: 20px;
-    opacity: 70%;
+    color: #495057;
+    font-size: 30px;
+
 }
-
-.rectangulo{
-    background-color:whitesmoke;
-    position: absolute;
-    right: 0;
-    width: 35%;
-    height: 90%;
-    padding-top: 15%;
-    border-radius:30px ;
-    box-sizing: border-box;
-    
-    text-align: center;
-    text-decoration: underline;
-    
-    font: size 1em;
-    text-transform: uppercase;
-    }
-    .rectangulo img{
-        width: 80%;
-        height: 50%;
-    }
-
-    .textrectangulo{
-        font-size: 15px;
-    }

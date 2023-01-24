@@ -7,49 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <title>Encriptador</title>
-    <script src="script.js"> </script>
-    
 </head>
-
 <body>
-    
     <header>
-        <img src="d:/personal/oracle/challenger/imagenes/Frame 6.png" alt="logo alura" class="logo">
+        <img src="Frame 6.png" alt="logo alura" class="logo">
     </header>
     <main>
-        <section>
-            <textarea class="text-area" id="textoaencriptar" cols="30" rows="10" placeholder="Ingrese el Texto Aquí"></textarea>
-            <div>
-                <h6 class="informacion">Solo Letras Minusculas y Sin Acentos</h6>
+        <section><textarea class="text-area" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+         <div>
+            <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>            
             </div>
-            <div class="botones">
-                <button onclick="encriptarClick()" class="btnEncriptar">Encriptar</button>
-                <button onclick="desencriptarClick()" class="btnDesencriptar">Desencriptar</button>
-                
-            </div>           
 
+            <div class="botones">
+            <button class="btn-encriptar" onclick="btnEncriptar()" >Encriptar</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
+            </div>
         </section>
 
-
-         <section>                  
-                <div class="rectangulo" >
-                    <div id="oculto">
-        
-                        <img src="Muñeco.png"   alt="muñeco">
-                    
-                        <p class="textrectangulo">no se encontro el texto</p>
-                        <p class="textrectangulo"> ingrese el texto que desea encriptar/desencriptar</p>
-                    </div>
-                     <div>
-                     <textarea type="text" id="text-cambio" style="display: none;"></textarea>
-                     </div>
-                     <input type="button" value="copiar" id="copiar" style="display: none;" onclick="copy()">
-                    </div>
-                </div>
-        </section>               
-                      
+        <section>
+            <textarea class="mensaje" id="mensaje-encriptado" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copiar">Copiar</button>
+            </div>
+        </section>
     </main>
+
+<script src="scrypt.js"></script>
+
 </body>
 </html>
