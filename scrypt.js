@@ -50,5 +50,16 @@ function encriptar(stringEncriptada){
         return stringDesencriptada
 
     }
+    
 
-   
+    document.getElementById("btncopiar").onclick = function() {
+        var text = document.getElementById("mensaje-encriptado").value;
+     
+        navigator.clipboard.writeText(text)
+        .then(() => {
+            console.log('Text copiado al clipboard');
+        })
+        .catch(err => {
+            console.error('Error in copying text: ', err);
+        });
+    }
