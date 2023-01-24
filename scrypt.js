@@ -57,9 +57,9 @@ function encriptar(stringEncriptada){
      
         navigator.clipboard.writeText(text)
         .then(() => {
-            console.log('Text copiado al clipboard');
+            console.log('Texto copiado al clipboard');
         })
         .catch(err => {
-            console.error('Error in copying text: ', err);
+            console.error('Error en copiar texto: ', err);
         });
     }
